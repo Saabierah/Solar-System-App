@@ -25,3 +25,74 @@ h1{
 }
 
 /*==================== NEPTUNE ====================*/
+
+#neptune{
+    width: 66px;
+    height: 66px;
+    margin: 143px;
+    z-index: 1000;
+    animation: spin-right 8s linear infinite;
+    -webkit-animation: spin-right 8s linear infinite;
+}
+
+#neptune-orbit{
+    position: absolute;
+    width: 1204px;
+    height: 1204px;
+    bottom: -512px;
+    left: 50%;
+    margin-left: -602px;
+    border: 1px dotted white;
+    border-radius: 50%;
+    animation: spin-left 14s linear infinite;
+    -webkit-animation: spin-left 14s linear infinite;
+}
+
+#neptune-label{
+    bottom: 692px;
+}
+
+/*==================== PLEASE REMOVE ====================*/
+
+#container{
+    transform: scale(0.8, 0.8) translate(0, 700px);
+}
+
+/*==================== LABEL BOX ====================*/
+
+.label-box{
+    position: absolute;
+    width: 150px;
+    left: 50%;
+    margin-left: -75px;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+.label-box a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.label-box a:visited{
+    color: white;
+}
+
+/*==================== ANIMATION ====================*/
+
+@keyframes spin-left{
+    100%{
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@keyframes spin-right{
+    100%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
